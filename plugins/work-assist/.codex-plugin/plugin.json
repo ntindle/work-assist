@@ -1,0 +1,23 @@
+{
+  "name": "work-assist",
+  "version": "0.2.0",
+  "description": "Secure multi-session sandbox terminal, desktop, and agent coordination for ChatGPT Work and Codex.",
+  "author": {
+    "name": "ntindle"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Work Assist",
+    "shortDescription": "Share isolated sandbox terminals and desktops.",
+    "longDescription": "Work Assist coordinates a Cloudflare-protected multi-session dashboard, outbound PTY and VNC relays, and a bounded local agent inbox.",
+    "developerName": "ntindle",
+    "category": "Productivity",
+    "capabilities": ["Terminal", "Desktop", "Agent coordination"],
+    "defaultPrompt": [
+      "Open Work Assist and connect this sandbox.",
+      "Start the Work Assist terminal.",
+      "Start a Work Assist desktop.",
+      "Test the Work Assist terminal end to end."
+    ]
+  }
+}
