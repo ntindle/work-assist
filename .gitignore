@@ -1,0 +1,52 @@
+# Operating-system and editor state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# JavaScript and build output
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# Local Codex, Work Assist, and Cloudflare runtime state
+.codex/
+.work-assist/
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+auth.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+
+# Infrastructure state and generated archives
+*.tfstate
+*.tfstate.*
+*.zip
+*.tar
+*.tar.gz
