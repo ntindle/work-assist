@@ -1,0 +1,20 @@
+{
+  "name": "work-assist",
+  "interface": {
+    "displayName": "Work Assist"
+  },
+  "plugins": [
+    {
+      "name": "work-assist",
+      "source": {
+        "source": "local",
+        "path": "./plugins/work-assist"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
