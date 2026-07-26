@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "hark-notifications": {
+      "url": "https://hark-mcp.oeis.ntindle.com/mcp"
+    }
+  }
+}

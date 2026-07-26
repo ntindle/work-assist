@@ -8,6 +8,23 @@ This repository contains the generic plugin distribution. It does not contain
 Cloudflare deployment configuration, credentials, browser profiles, chat
 transcripts, or project-specific application code.
 
+## Hark notifications
+
+The marketplace also includes **Hark Notifications**, a separate plugin that
+adds one authenticated `send_notification` MCP action and a no-secret internal
+relay for other Cloudflare services. It accepts:
+
+- `body` (required);
+- optional `title`, `imageUrl`, and destination `url`;
+- optional `deviceIds` for Hark Pro routing (omit it to notify every active
+  registered device).
+
+The MCP service runs on Cloudflare Workers behind Cloudflare Access managed
+OAuth. Its Hark webhook is stored only as the `HARK_WEBHOOK_URL` Worker secret;
+the endpoint is not committed to this public repository. See
+[`services/hark-notifications-mcp`](services/hark-notifications-mcp) for the
+implementation, deployment checks, and service-binding example.
+
 ## What it provides
 
 - Opaque identities for top-level chats, activations, roots, and subagents.

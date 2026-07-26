@@ -1,0 +1,33 @@
+{
+  "name": "hark-notifications",
+  "version": "0.1.0",
+  "description": "Send authenticated push notifications through Hark.",
+  "author": {
+    "name": "ntindle",
+    "url": "https://github.com/ntindle"
+  },
+  "homepage": "https://github.com/ntindle/work-assist#hark-notifications",
+  "repository": "https://github.com/ntindle/work-assist",
+  "keywords": [
+    "hark",
+    "notifications",
+    "push"
+  ],
+  "interface": {
+    "displayName": "Hark Notifications",
+    "shortDescription": "Send push notifications through Hark.",
+    "longDescription": "Adds an authenticated send_notification tool for Hark push notifications, including optional titles, images, links, and device routing.",
+    "developerName": "ntindle",
+    "category": "Productivity",
+    "capabilities": [
+      "Notifications",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Send me a Hark notification.",
+      "Notify me through Hark when this is finished.",
+      "Send this link to my devices through Hark."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
